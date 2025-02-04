@@ -1,0 +1,5 @@
+rootProject.name = 'Library-management-system-API'
+
+include 'eureka-server'
+include 'student'
+include 'library'
