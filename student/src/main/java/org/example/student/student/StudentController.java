@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/service-student")
+@RequestMapping("/service-student")
 public class StudentController {
-    @GetMapping("/endpoint")
+    @GetMapping("/students")
     public String endpoint() {
         return "Hello from Service Student!";
     }

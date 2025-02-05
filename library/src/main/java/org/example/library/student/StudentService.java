@@ -1,10 +1,8 @@
 package org.example.library.student;
 
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "student")
+import reactor.core.publisher.Mono;
+
 public interface StudentService {
-    @GetMapping("/api/service-student/endpoint")
-    String callHello();
+    Mono<String> getStudentData();
 }
